@@ -23,8 +23,8 @@ AI Image Generation: Stable Horde API<br>
 Database: To store user choices and generated images<br>
 
 
-#### Getting Started
-###### Prerequisites <br>
+### Getting Started
+#### Prerequisites <br>
 Node.js and npm<br>
 Python<br>
 A modern web browser
