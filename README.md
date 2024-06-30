@@ -41,4 +41,4 @@ module.exports.connectToDb = () =><br>
    &nbsp; )
 <br>
 
-#### Make sure to replace <username>, <password>, <cluster>, and <database> with your actual MongoDB connection details.
+#### Make sure to replace `<username>`, `<password>`, `<cluster>`, and `<database>` with your actual MongoDB connection details.
