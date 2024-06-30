@@ -22,8 +22,24 @@ Mapping: Leaflet.js<br>
 AI Image Generation: Stable Horde API<br>
 Database: To store user choices and generated images<br>
 
+
 #### Getting Started
 ###### Prerequisites <br>
 Node.js and npm<br>
 Python<br>
 A modern web browser
+
+
+##### Setting up dbClient.js:
+In dbClient.js, you can manage your MongoDB database connections and image storage. Here's a sample structure for dbClient.js: <br>
+
+// Function to connect to MongoDB
+module.exports.connectToDb = () =>
+  mongoose
+    .connect(
+      "mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority", 
+      { useNewUrlParser: true, useUnifiedTopology: true }
+    )
+
+
+#### Make sure to replace <username>, <password>, <cluster>, and <database> with your actual MongoDB connection details.
