@@ -35,17 +35,10 @@ In dbClient.js, you can manage your MongoDB database connections and image stora
 
 // Function to connect to MongoDB<br>
 module.exports.connectToDb = () =><br>
-  mongoose<br>
-    .connect(// ADD HERE YOUR mongodb details<br>
-            "mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority", // ADD HERE YOUR mongodb details<br>
-    )// ADD HERE YOUR mongodb details<br>
-    .then(() => {<br>
-      console.log("Connected to MongoDB");<br>
-    })<br>
-    .catch((err) => {<br>
-      console.error("Error connecting to MongoDB:", err);<br>
-    });<br>
-
+  &nbsp;mongoose<br>
+   &nbsp; .connect(<br>
+     &nbsp;&nbsp;       "mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority", // ADD HERE YOUR mongodb details<br>
+   &nbsp; )
 <br>
 
 #### Make sure to replace <username>, <password>, <cluster>, and <database> with your actual MongoDB connection details.
