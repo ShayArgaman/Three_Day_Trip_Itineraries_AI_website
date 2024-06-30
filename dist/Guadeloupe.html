@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script defer src="/JavaScript/Guadeloupe.js"></script>
+    <!-- <script defer src="/JavaScript/db.js"></script> -->
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="w-full">
+    <div
+      class="container-page h-screen grid grid-cols-3 place-items-center gap-2"
+    >
+      <div class="left-side h-screen w-full">
+        <div class="left-side-container flex flex-col place-items-center">
+          <img src="../img/RailGenius.png" class="w-60" alt="" />
+          <div class="up opc"></div>
+          <div class="down opc">
+            <div class="form-handling">
+              <form class="form flex flex-col justify-around">
+                <div class="form__row">
+                  <label class="form__label text-white">Trip Type</label>
+                  <select class="form__input form__input--type1">
+                    <option value="Option">Option</option>
+                    <option value="Car">Car</option>
+                    <option value="Walk">Walk</option>
+                    <option value="Cycling">Cycling</option>
+                  </select>
+                </div>
+                <div class="form__row">
+                  <label class="form__label text-white">Finish Line</label>
+                  <select class="form__input form__input--type2">
+                    <option value="Option">Option</option>
+                    <option value="Jordin Public Park">
+                      Jordin Public Park
+                    </option>
+                    <option value="Viard City">Viard City</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="text-handling text-white w-96 overflow-hidden"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container right-side col-span-2" id="map"></div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
